@@ -16,7 +16,7 @@ const RepeatCustomersChart = () => {
       }
       try {
         
-        const response = await axios.post('http://localhost:5000/api/customers/repeat-customers', {
+        const response = await axios.post('https://rapidquest-0zjp.onrender.com/api/customers/repeat-customers', {
           interval,
           startDate,
           endDate

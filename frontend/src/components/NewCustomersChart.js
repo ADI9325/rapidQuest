@@ -11,7 +11,7 @@ const NewCustomersChart = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.post('http://localhost:5000/api/customers/new-customers', { interval, startDate, endDate });
+                const response = await axios.post('https://rapidquest-0zjp.onrender.com/api/customers/new-customers', { interval, startDate, endDate });
                 const data = response.data;
 
                 if (Array.isArray(data)) {
